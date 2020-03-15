@@ -115,7 +115,9 @@ h6,
  * header
  *-------------------------*/
 .global-header {
-  border-bottom: 1px solid #afbac4; }
+  border-bottom: 1px solid #afbac4;
+  float: left;
+  width: 100%; }
 
 .global-nav {
   float: right; }
@@ -130,5 +132,8 @@ h6,
 
 .global-nav > li:first-child {
   margin: 0; }
+
+.global-nav a {
+  color: #192127; }
 
 /*# sourceMappingURL=main.css.map */
