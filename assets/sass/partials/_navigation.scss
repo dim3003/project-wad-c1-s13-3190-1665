@@ -1,0 +1,12 @@
+/*------------------------
+ * navigation
+ *-----------------------*/
+.global-nav > li {
+    float:left;
+    list-style-type: none;
+    margin-left: 1.6em;
+}
+
+.global-nav > li:first-child{
+    margin:0;
+}
