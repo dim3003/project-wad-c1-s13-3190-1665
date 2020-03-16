@@ -6,9 +6,24 @@
     background-color: $black;
     color: $grey-3;
     padding: ($pulse * 3) 0 ($pulse * 3);
+    padding:0;
 }
 
 .global-footer a {
     color: inherit;
     text-decoration: none;
 }
+
+.global-footer .logo{
+  float:left;
+}
+
+.global-footer .copyright {
+  float:right;
+}
+
+.global-footer::after {
+    content: '';
+    display: table;
+    clear: both;
+  }

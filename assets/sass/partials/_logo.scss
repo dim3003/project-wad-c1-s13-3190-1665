@@ -2,8 +2,9 @@
  * logo
  *--------------------------*/
 
- .logo{
+.logo{
     float:left;
+    margin: 2.25em 0 2.25em 3em;
  }
 
  .logo a {
@@ -13,7 +14,6 @@
     font-size: 1.8em;
     font-weight:bold;
     color: $black;
-    white-space:nowrap;
 }
 
 .logo em {

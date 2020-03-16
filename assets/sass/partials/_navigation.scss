@@ -1,14 +1,15 @@
 /*------------------------
  * navigation
  *-----------------------*/
- .global-nav > li {
+.global-nav {
+  margin: 1.5em 0 1.5em 2em;
+  padding:0;
+}
+
+.global-nav > li {
      float:left;
      list-style-type: none;
-     margin-left: 1.6em;
- }
-
- .global-nav > li:first-child{
-     margin:0;
+     margin-right: 1.6em;
  }
 
 .global-nav a {
