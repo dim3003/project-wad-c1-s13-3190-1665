@@ -320,6 +320,20 @@ body {
   padding: 0;
   color: #72797E; }
 
+.content-wrapper {
+  max-width: 96em;
+  margin: 0 auto;
+  padding: 0 2.25em; }
+
+.content-wrapper:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.bare-list {
+  list-style-type: none;
+  padding: 0; }
+
 /* ===========================
     TYPOGRAPHY
     ========================== */
@@ -382,6 +396,39 @@ h6,
   line-height: 1.4;
   color: #72797e; }
 
+/*------------------------
+ * navigation
+ *-----------------------*/
+.global-nav {
+  margin: 1.5em 0 1.5em 0;
+  padding: 0; }
+
+.global-nav > li {
+  float: left;
+  list-style-type: none;
+  margin-right: 1.6em; }
+
+.global-nav a {
+  color: #192127; }
+
+.main-nav {
+  color: #2c9cf2;
+  margin: 0 0 2.25em;
+  padding: 0 1.5em; }
+
+.main-nav a {
+  color: #2c9cf2; }
+
+/*--------------------------
+ * header
+ *-------------------------*/
+.global-header {
+  margin: 0 0 4.8rem 0;
+  border-bottom: 1px solid #e3e5e9; }
+
+.global-nav {
+  float: right; }
+
 /* ----------------------------
  * Footer
  *----------------------*/
@@ -403,7 +450,8 @@ h6,
 
 .global-footer .copyright {
   float: right;
-  margin: 3em 2.25em 0 2.25em; }
+  padding: 0 1em;
+  margin: 3em 0 0 2.25em; }
 
 .global-footer::after {
   content: '';
@@ -415,7 +463,7 @@ h6,
  *--------------------------*/
 .logo {
   float: left;
-  margin: 2.25em 0 2.25em 3em; }
+  margin: 2.25em 2.25em 2.25em 0; }
 
 .logo a {
   text-decoration: none; }
@@ -431,35 +479,5 @@ h6,
 
 .global-footer .logo span {
   color: #fff; }
-
-/*--------------------------
- * header
- *-------------------------*/
-.global-header {
-  margin: 0 0 4.8rem 0;
-  border-bottom: 1px solid #e3e5e9; }
-
-.global-nav {
-  float: right; }
-
-.global-header::after {
-  content: '';
-  display: table;
-  clear: both; }
-
-/*------------------------
- * navigation
- *-----------------------*/
-.global-nav {
-  margin: 1.5em 0 1.5em 2em;
-  padding: 0; }
-
-.global-nav > li {
-  float: left;
-  list-style-type: none;
-  margin-right: 1.6em; }
-
-.global-nav a {
-  color: #192127; }
 
 /*# sourceMappingURL=main.css.map */
