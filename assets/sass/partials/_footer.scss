@@ -3,10 +3,14 @@
  *----------------------*/
 
  .global-footer {
+   width:100%;
+   position:fixed;
+   bottom:0;
+   left:0;
+
     background-color: $black;
     color: $grey-3;
-    padding: ($pulse * 3) 0 ($pulse * 3);
-    padding:0;
+    padding: ($pulse * 3) 0 ($pulse * 2);
 }
 
 .global-footer a {
@@ -20,6 +24,7 @@
 
 .global-footer .copyright {
   float:right;
+  margin: 3em 2.25em 0 2.25em;
 }
 
 .global-footer::after {
