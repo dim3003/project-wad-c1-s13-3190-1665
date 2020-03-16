@@ -9,4 +9,7 @@
 
 .global-nav{
     float:right;
+    @media screen and (max-width:580px){
+      float:left;
+    }
   }

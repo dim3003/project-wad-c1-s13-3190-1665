@@ -428,6 +428,9 @@ h6,
 
 .global-nav {
   float: right; }
+  @media screen and (max-width: 580px) {
+    .global-nav {
+      float: left; } }
 
 /* ----------------------------
  * Footer
@@ -439,7 +442,7 @@ h6,
   left: 0;
   background-color: #192127;
   color: #bbc1c6;
-  padding: 4.8rem 0 3.2rem; }
+  padding: 3.2rem 0 1.6rem; }
 
 .global-footer a {
   color: inherit;
@@ -450,8 +453,10 @@ h6,
 
 .global-footer .copyright {
   float: right;
-  padding: 0 1em;
-  margin: 3em 0 0 2.25em; }
+  margin: 3em 0 0 0; }
+  @media screen and (max-width: 320px) {
+    .global-footer .copyright {
+      float: left; } }
 
 .global-footer::after {
   content: '';

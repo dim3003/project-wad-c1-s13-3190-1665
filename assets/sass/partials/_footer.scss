@@ -10,7 +10,7 @@
 
     background-color: $black;
     color: $grey-3;
-    padding: ($pulse * 3) 0 ($pulse * 2);
+    padding: ($pulse * 2) 0 ($pulse * 1);
 }
 
 .global-footer a {
@@ -24,8 +24,10 @@
 
 .global-footer .copyright {
   float:right;
-  padding: 0 1em;
-  margin: 3em 0 0 2.25em;
+  @media screen and (max-width:320px){
+    float:left;
+  }
+  margin: 3em 0 0 0;
 }
 
 .global-footer::after {
