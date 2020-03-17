@@ -10,6 +10,14 @@ sass --watch assets/sass:assets/css-->
     <link rel="stylesheet" href="assets/css/main.css"/>
   </head>
   <body>
+    <svg style="display:none;">
+      <defs>
+        <symbol id="block">
+           <rect x="1" y="1" rx="2" ry="2" width="198" height="98"/>
+        </symbol>
+      </defs>
+    </svg>
+
     <header class="global-header">
       <div class="content-wrapper">
         <div class="logo logo--black">
@@ -36,6 +44,50 @@ sass --watch assets/sass:assets/css-->
         </ol>
         <div class="main-element" id="colors">
           <h2>01. Colors</h2>
+            <ul class="blocks">
+              <li class="block">
+                <svg class="block--blue" width="200" height="100">
+                  <use xlink:href="#block"></use>
+                  <p>#2c9cf2</p>
+                </svg>
+              </li>
+              <li class="block">
+                <svg class="block--orange" width="200" height="100">
+                  <use xlink:href="#block"></use>
+                  <p>#e25d43</p>
+                </svg>
+              </li>
+              <li class="block">
+                <svg class="block--grey-1" width="200" height="100">
+                  <use xlink:href="#block"></use>
+                  <p>#72797e</p>
+                </svg>
+              </li>
+              <li class="block">
+                <svg class="block--grey-2" width="200" height="100">
+                  <use xlink:href="#block"></use>
+                  <p>#afbac4</p>
+                </svg>
+              </li>
+              <li class="block">
+                <svg class="block--grey-3" width="200" height="100">
+                  <use xlink:href="#block"></use>
+                  <p>#bbc1c6</p>
+                </svg>
+              </li>
+              <li class="block">
+                <svg class="block--grey-4" width="200" height="100">
+                  <use xlink:href="#block"></use>
+                  <p>#e3e5e9</p>
+                </svg>
+              </li>
+              <li class="block">
+                <svg class="block--grey-5" width="200" height="100">
+                  <use xlink:href="#block"></use>
+                  <p>#f7f9fc</p>
+                </svg>
+              </li>
+            </ul>
         </div>
         <div class="main-element" id="typography">
           <h2>02. Typography</h2>

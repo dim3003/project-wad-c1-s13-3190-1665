@@ -10,7 +10,15 @@
 
     background-color: $black;
     color: $grey-3;
-    padding: ($pulse * 2) 0 ($pulse * 1);
+    padding:0 0 1em 0;
+
+    @include tablet {
+      padding:0 0 1em 0;
+    }
+
+    @include desktop {
+      padding: ($pulse * 2) 0 ($pulse * 1);
+    }
 }
 
 .global-footer a {

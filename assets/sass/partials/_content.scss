@@ -1,0 +1,49 @@
+.blocks {
+  display:flex;
+  flex-wrap: wrap;
+
+  font-size: 1em;
+  padding:0;
+}
+
+.block{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  stroke:#000;
+  stroke-width:0.5%;
+  margin-right: 2em;
+
+  & p {
+    text-align: center;
+  }
+}
+
+.block--blue{
+  fill: $primary-color;
+}
+
+.block--orange{
+  fill:$secondary-color;
+}
+
+.block--grey-1{
+  fill:$grey-1;
+}
+
+.block--grey-2{
+  fill:$grey-2;
+}
+
+.block--grey-3{
+  fill:$grey-3;
+}
+
+.block--grey-4{
+  fill:$grey-4;
+}
+
+.block--grey-5{
+  fill:$grey-5;
+}

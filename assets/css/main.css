@@ -402,6 +402,9 @@ h6,
 .global-nav {
   margin: 1.5em 0 1.5em 0;
   padding: 0; }
+  @media screen and (max-width: 580px) {
+    .global-nav {
+      margin: 0.5em 1.5em 1.5em 0; } }
 
 .global-nav > li {
   float: left;
@@ -432,6 +435,43 @@ h6,
     .global-nav {
       float: left; } }
 
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  padding: 0; }
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  stroke: #000;
+  stroke-width: 0.5%;
+  margin-right: 2em; }
+  .block p {
+    text-align: center; }
+
+.block--blue {
+  fill: #2c9cf2; }
+
+.block--orange {
+  fill: #e25d43; }
+
+.block--grey-1 {
+  fill: #72797e; }
+
+.block--grey-2 {
+  fill: #afbac4; }
+
+.block--grey-3 {
+  fill: #bbc1c6; }
+
+.block--grey-4 {
+  fill: #e3e5e9; }
+
+.block--grey-5 {
+  fill: #f7f9fc; }
+
 /* ----------------------------
  * Footer
  *----------------------*/
@@ -442,7 +482,13 @@ h6,
   left: 0;
   background-color: #192127;
   color: #bbc1c6;
-  padding: 3.2rem 0 1.6rem; }
+  padding: 0 0 1em 0; }
+  @media screen and (min-width: 480px) {
+    .global-footer {
+      padding: 0 0 1em 0; } }
+  @media screen and (min-width: 800px) {
+    .global-footer {
+      padding: 3.2rem 0 1.6rem; } }
 
 .global-footer a {
   color: inherit;
@@ -469,6 +515,9 @@ h6,
 .logo {
   float: left;
   margin: 2.25em 2.25em 2.25em 0; }
+  @media screen and (max-width: 580px) {
+    .logo {
+      margin: 2.25em 2.25em 0 0; } }
 
 .logo a {
   text-decoration: none; }

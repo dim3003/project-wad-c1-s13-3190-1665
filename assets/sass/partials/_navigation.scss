@@ -3,6 +3,10 @@
  *-----------------------*/
 .global-nav {
   margin: 1.5em 0 1.5em 0;
+  @media screen and (max-width:580px){
+    margin: 0.5em 1.5em 1.5em 0;
+  }
+
   padding:0;
 }
 
