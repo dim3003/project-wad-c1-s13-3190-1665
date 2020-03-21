@@ -1,9 +1,13 @@
 .blocks {
   display:flex;
   flex-wrap: wrap;
+  &.nowrap{
+    flex-wrap: nowrap;
+  }
 
   font-size: 1em;
   padding:0;
+    margin-bottom: 5rem;
 }
 
 .block{
@@ -13,10 +17,21 @@
 
   stroke:#000;
   stroke-width:0.5%;
-  margin-right: 2em;
+  margin-right: 4em;
 
   & p {
-    text-align: center;
+    margin:0;
+    text-align:center;
+    white-space: nowrap;
+  }
+
+  & span {
+    color:$black;
+  }
+
+  & span em {
+    font-size: 6em;
+    font-style: normal;
   }
 }
 
@@ -47,3 +62,38 @@
 .block--grey-5{
   fill:$grey-5;
 }
+
+.typo {
+  display:flex;
+  flex-direction: column;
+}
+
+.row{
+  display:flex;
+  flex-direction: row;
+  flex:1 0 auto;
+  align-items: center;
+  width:100%;
+  height:85px;
+  border-bottom: 1px solid $grey-3;
+    font-size: 1.5em;
+
+  &:last-child {
+    margin-bottom: 5em;
+  }
+
+  & div{
+    width:20%;
+    text-align:center;
+  }
+
+  & h1, & h2, & h3, & h4, & h5, & h6{
+    margin:0;
+    padding:0;
+  }
+
+  & .btn{
+    font-size:1.3rem;
+    color:$black;
+    }
+ }
