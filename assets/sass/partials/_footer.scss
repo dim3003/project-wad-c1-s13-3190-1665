@@ -1,12 +1,12 @@
 /* ----------------------------
  * Footer
  *----------------------*/
-
  .global-footer {
    width:100%;
    position:fixed;
    bottom:0;
    left:0;
+   clear:both;
 
     background-color: $black;
     color: $grey-3;

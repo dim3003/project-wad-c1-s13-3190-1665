@@ -1,0 +1,60 @@
+/* =========================
+ * BUTTONS
+ * ========================= */
+ .btn {
+    font-size: 1.3rem;
+    background-color: #fff;
+    color: $black;
+
+    padding: $pulse;
+    margin: 1em 0;
+
+    border:1px solid $grey-4;
+    border-radius: 3px;
+
+    text-decoration:none;
+    text-transform:uppercase;
+
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration:none;
+        background-color: $grey-4;
+        color: $primary-color;
+    }
+}
+
+.btn--cta{
+    color:#fff;
+    background-color: $primary-color;
+    border: $primary-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration:none;
+        background-color: darken($primary-color, 20);
+        border: darken($primary-color, 15);
+        color: $white;
+    }
+}
+
+.btn--warning {
+    color:#fff;
+    background-color: $secondary-color;
+    border:  $secondary-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration:none;
+        background-color: darken($secondary-color, 15);
+        border: darken($secondary-color, 15);
+        color:$white;
+    }
+
+}

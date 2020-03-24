@@ -334,6 +334,16 @@ body {
   list-style-type: none;
   padding: 0; }
 
+.blank-space {
+  width: 100%;
+  padding-bottom: 60.5px; }
+  @media screen and (min-width: 480px) {
+    .blank-space {
+      padding-bottom: 83px; } }
+  @media screen and (min-width: 800px) {
+    .blank-space {
+      padding-bottom: 121px; } }
+
 /* ===========================
     TYPOGRAPHY
     ========================== */
@@ -428,6 +438,47 @@ h6,
 .main-nav a {
   color: #2c9cf2; }
 
+/* =========================
+ * BUTTONS
+ * ========================= */
+.btn {
+  font-size: 1.3rem;
+  background-color: #fff;
+  color: #192127;
+  padding: 1.6rem;
+  margin: 1em 0;
+  border: 1px solid #e3e5e9;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center; }
+  .btn:hover, .btn:active, .btn:focus {
+    text-decoration: none;
+    background-color: #e3e5e9;
+    color: #2c9cf2; }
+
+.btn--cta {
+  color: #fff;
+  background-color: #2c9cf2;
+  border: #2c9cf2; }
+  .btn--cta:hover, .btn--cta:active, .btn--cta:focus {
+    text-decoration: none;
+    background-color: #0b67ad;
+    border: #0c75c5;
+    color: #fff; }
+
+.btn--warning {
+  color: #fff;
+  background-color: #e25d43;
+  border: #e25d43; }
+  .btn--warning:hover, .btn--warning:active, .btn--warning:focus {
+    text-decoration: none;
+    background-color: #bc371d;
+    border: #bc371d;
+    color: #fff; }
+
 /*--------------------------
  * header
  *-------------------------*/
@@ -509,9 +560,6 @@ h6,
   .row h1, .row h2, .row h3, .row h4, .row h5, .row h6 {
     margin: 0;
     padding: 0; }
-  .row .btn {
-    font-size: 1.3rem;
-    color: #192127; }
 
 /* ----------------------------
  * Footer
@@ -521,6 +569,7 @@ h6,
   position: fixed;
   bottom: 0;
   left: 0;
+  clear: both;
   background-color: #192127;
   color: #bbc1c6;
   padding: 0 0 1em 0; }

@@ -14,3 +14,16 @@
         list-style-type:none;
         padding:0;
     }
+
+.blank-space{
+  width:100%;
+  padding-bottom:60.5px;
+
+  @include tablet {
+    padding-bottom: 83px;
+  }
+
+  @include desktop{
+    padding-bottom: 121px;
+  }
+}
