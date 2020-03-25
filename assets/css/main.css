@@ -339,9 +339,11 @@ body {
   padding-bottom: 60.5px; }
   @media screen and (min-width: 480px) {
     .blank-space {
+      width: 100%;
       padding-bottom: 83px; } }
   @media screen and (min-width: 800px) {
     .blank-space {
+      width: 100%;
       padding-bottom: 121px; } }
 
 .sr-only {
@@ -353,6 +355,22 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
+
+.icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-bottom: 2em; }
+  .icons .icon__block {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin: 0 1em 1em 0;
+    box-shadow: 0 0 15px -5px #192127;
+    width: 15%;
+    text-align: center; }
 
 /* ===========================
     TYPOGRAPHY
