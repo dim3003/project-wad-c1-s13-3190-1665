@@ -344,6 +344,16 @@ body {
     .blank-space {
       padding-bottom: 121px; } }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
 /* ===========================
     TYPOGRAPHY
     ========================== */
@@ -411,6 +421,30 @@ h6,
   font-size: 1.2em;
   line-height: 1.4;
   color: #72797e; }
+
+.input {
+  font-size: 1.5rem;
+  color: #72797e; }
+
+.input__label {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0 .5em; }
+
+.input__field {
+  background-color: #fff;
+  border: 1px solid #e3e5e9;
+  padding: 1.6rem;
+  font-size: inherit;
+  margin-bottom: 1em;
+  box-shadow: 0 0 30px -10px #192127; }
+  .input__field:focus {
+    border-color: #72797e; }
+
+.input__row {
+  display: flex; }
+  .input__row .input__field {
+    flex: 1 0 10em; }
 
 /*------------------------
  * navigation
@@ -554,6 +588,9 @@ h6,
   font-size: 1.5em; }
   .row:last-child {
     margin-bottom: 5em; }
+  .row .button-font {
+    font-size: 1.3rem;
+    color: #192127; }
   .row div {
     width: 20%;
     text-align: center; }

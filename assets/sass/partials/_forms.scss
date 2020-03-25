@@ -1,0 +1,33 @@
+.input {
+  font-size:1.5rem;
+  color:$grey-1;
+}
+
+
+.input__label {
+  display:inline-block;
+  cursor:pointer;
+  margin: 0 0 .5em;
+}
+
+.input__field{
+  background-color: #fff;
+  border: 1px solid $grey-4;
+  padding:$pulse;
+  font-size: inherit;
+  margin-bottom: 1em;
+  box-shadow: 0 0 30px -10px $black;
+
+  &:focus {
+    border-color: $grey-1;
+  }
+}
+
+
+.input__row {
+  display:flex;
+
+  & .input__field {
+    flex:1 0 10em;
+  }
+}
