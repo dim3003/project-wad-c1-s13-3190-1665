@@ -14,10 +14,15 @@
 
     text-decoration:none;
     text-transform:uppercase;
+    text-align: center;
 
     cursor:pointer;
     display:flex;
     align-items: center;
+
+    & svg {
+      margin-right: 0.5em;
+    }
 
     &:hover,
     &:active,
