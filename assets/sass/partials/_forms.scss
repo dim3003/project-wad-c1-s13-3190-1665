@@ -1,33 +1,49 @@
 .input {
-  font-size:1.5rem;
-  color:$grey-1;
-}
+  font-size: 1.5rem;
+  margin: 1em 0;
 
-
-.input__label {
-  display:inline-block;
-  cursor:pointer;
-  margin: 0 0 .5em;
-}
-
-.input__field{
-  background-color: #fff;
-  border: 1px solid $grey-4;
-  padding:$pulse;
-  font-size: inherit;
-  margin-bottom: 1em;
-  box-shadow: 0 0 30px -10px $black;
-
-  &:focus {
-    border-color: $grey-1;
+  @media screen and (min-width:530px) {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
+.input__label {
+  display:block;
+  cursor:pointer;
+  color:$black;
+  width: 40%;
+  padding:.5em 0;
+}
 
 .input__row {
   display:flex;
+  width: 60%;
 
-  & .input__field {
-    flex:1 0 10em;
+  & .input__field{
+    flex:1 0 auto;
+
+    padding:.5em;
   }
+
+  @include tablet{
+    margin-right: 12em;
+    max-width: 25em;
+  }
+
+  @include desktop{
+    margin-right: 24em;
+  }
+  
+  box-shadow: 0 0 15px -5px $black;
+}
+
+.input--cta .input__field{
+  border: 1px solid $primary-color;
+
+}
+
+.profile-pic{
+  border-radius:25px;
 }

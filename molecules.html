@@ -1,4 +1,4 @@
-<!--cd iCloudDrive/Documents/EPFL Web Dev/HTMLCSS project
+<!--cd/d D:/EPFL Web Dev/HTMLCSS project
 sass --watch assets/sass:assets/css-->
 <!DOCTYPE html>
 <html>
@@ -39,8 +39,8 @@ sass --watch assets/sass:assets/css-->
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#forms">Forms</a></li>
         </ol>
-        <div class="main-element" id="buttons">
-          <h2>01. Buttons</h2>
+        <div class="main--element" id="buttons">
+          <h2>01. Buttons with icons</h2>
             <div class="blocks">
               <div class="block">
                 <p>LIKE BUTTON</p>
@@ -81,6 +81,47 @@ sass --watch assets/sass:assets/css-->
                   </svg>
                   COMPLETED
                 </button>
+              </div>
+            </div>
+        </div>
+        <div class="main--element" id="forms">
+          <h2>02. Forms</h2>
+            <p>SEARCH FORM</p>
+            <form class="search input input--cta" action="ideas" method="get">
+              <label class="input__label sr-only" for='search-input'> Search </label>
+              <div class="input__row">
+                <input class="input__field" id="search-input" type="text" name="search"
+                    placeholder="e.g. Swimming with dolphins" />
+                <button class="btn btn--form btn--cta" type="submit"> Search</button>
+              </div>
+            </form>
+            <p>EMAIL FORM</p>
+            <form class="input" action="ideas" method="get">
+              <label class="input__label" for="email-style">Email</label>
+              <div class="input__row">
+                <input class="input__field" id="email-style" type="email" name= "search" />
+              </div>
+            </form>
+            <p>PASSWORD FORM</p>
+            <form class="input" action="ideas" method="get">
+              <label class="input__label" for="password-style">Password</label>
+              <div class="input__row">
+                <input class="input__field" id="password-style" type="password" name= "search" />
+              </div>
+            </form>
+            <p>COMMENT FORM</p>
+            <div class="blocks nowrap">
+              <div class="block center">
+                <img class="profile-pic" src="/assets/images/avatar.png"/>
+              </div>
+              <div class="block comment">
+                <form action="ideas" method="get">
+                  <label class="input__label" for="comment-style">Add a comment</label>
+                  <div class="input__row">
+                    <textarea class="input__field" id="comment-style" name="comment" rows="8" cols="40" placeholder="Leave your comment..."></textarea>
+                  </div>
+                  <button class="btn btn--cta" type="submit">Post</button>
+                </form>
               </div>
             </div>
         </div>

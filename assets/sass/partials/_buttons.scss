@@ -37,6 +37,7 @@
     color:#fff;
     background-color: $primary-color;
     border: $primary-color;
+    border-left-width: 0;
 
     &:hover,
     &:active,
@@ -62,4 +63,9 @@
         color:$white;
     }
 
+}
+
+.btn.btn--form{
+  border-radius:0;
+  margin:0;
 }
