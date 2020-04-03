@@ -580,6 +580,70 @@ h6,
   color: #2c9cf2; }
 
 /* =========================
+    CARD
+    ====================== */
+.card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
+  margin: 0 1.6rem 1.6rem 0;
+  border-radius: 3px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem; }
+  @media screen and (min-width: 580px) {
+    .card {
+      width: 400px; } }
+
+.card__thumb {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  display: block; }
+
+.card__intro {
+  padding: 1.6em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.card__title {
+  font-size: 2em;
+  color: #fff; }
+
+.card__intro span {
+  font-size: 1.3em; }
+
+.card__thumb img {
+  width: 100%;
+  display: block; }
+
+.cards::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* ----------------------
+ * Card__footer w/buttons
+ * --------------------*/
+.card__footer {
+  display: flex;
+  border-top: 1px solid #bbc1c6; }
+
+.card__footer .btn {
+  border-right: 1px solid #bbc1c6;
+  border-radius: 0;
+  margin: 0;
+  flex: 1 0 auto; }
+  .card__footer .btn:last-child {
+    border: none; }
+
+.card__footer .btn--like {
+  width: 60%;
+  text-align: left; }
+
+/* =========================
  * BUTTONS
  * ========================= */
 .btn {
