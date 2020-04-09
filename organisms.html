@@ -1,3 +1,5 @@
+<!--cd/d D:/EPFL Web Dev/HTMLCSS project
+sass --watch assets/sass:assets/css-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +17,6 @@
         </symbol>
       </defs>
     </svg>
-
     <header class="global-header">
       <div class="content-wrapper">
         <div class="logo logo--black">
@@ -34,10 +35,42 @@
       <div class="content-wrapper">
         <h1>Organisms</h1>
         <ol class="main-nav">
-          <li><a href="#example">Example</a></li>
+          <li><a href="#login">Login</a></li>
         </ol>
-        <div class="main-element" id="example">
-          <h2>01. Example</h2>
+        <div class="main-element" id="login">
+          <h2>01. Log in</h2>
+            <h2 class="form_title">Log in</h2>
+            <form class="form" action="ideas" method="get">
+              <div class="input">
+                <label class="input__label" for="email-style">Email</label>
+                <div class="input__row">
+                  <input class="input__field" id="email-style" type="email" name= "search" />
+                </div>
+              </div>
+              <div class="input">
+                <label class="input__label" for="password-style">Password</label>
+                <div class="input__row">
+                  <input class="input__field" id="password-style" type="password" name= "search" />
+                </div>
+              </div>
+              <div class="input input--forgot">
+                <div>
+              	  <input class="input__checkbox" id="remember-me" type="checkbox" name="remember-me"/>
+                  <label class="input__label input__label--checkbox" for="remember-me">Remember me</label>
+                </div>
+                <div class="input__link">
+                  <a href="forgot-password.html">Forgot password ?</a>
+                </div>
+              </div>
+              <div class="input">
+                <label class="input__label sr-only--580max" for="login-btn" name="Submit login"></label>
+                <div class="input__row">
+                  <button class="input__row btn btn--form btn--cta btn--submit" id="login-btn" type="submit">
+                      Log In
+                  </button>
+                </div>
+              </div>
+            </form>
         </div>
       </div>
       <div class="blank-space">
