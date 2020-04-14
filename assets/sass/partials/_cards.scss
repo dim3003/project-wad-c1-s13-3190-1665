@@ -2,21 +2,25 @@
     CARD
     ====================== */
 
+.cards{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .card{
     box-shadow: 0 0 20px rgba(0,0,0,0.14);
     margin: 0 $pulse $pulse 0;
     border-radius: 3px;
 
-
-    width:300px;
-
+    width:250px;
     @media screen and (min-width:580px){
-      width:400px;
+      width:300px;
     }
 
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     font-size:1rem;
 }
@@ -28,6 +32,16 @@
     display:block;
   }
 
+.card__owner {
+  margin:1.3em;
+  padding:0.4em 0.8em;
+  font-size: 1.3em;
+  background-color: $primary-color;
+  border-radius: 3px;
+  position:absolute;
+  top:0;
+  right: 0;
+}
 .card__intro {
     padding: 1.6em;
     position:absolute;
@@ -61,23 +75,25 @@
      * --------------------*/
 .card__footer {
     display:flex;
+    justify-content: flex-start;
     border-top: 1px solid $grey-3;
 }
 
 .card__footer .btn{
     border-right:1px solid $grey-3;
-
     &:last-child{
         border:none;
     }
 
+    display:flex;
+    justify-content: flex-start;
+
     border-radius:0;
     margin:0;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 
 }
 
 .card__footer .btn--like {
     width:60%;
-    text-align:left;
 }

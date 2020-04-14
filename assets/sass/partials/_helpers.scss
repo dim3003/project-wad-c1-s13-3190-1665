@@ -1,7 +1,7 @@
 .content-wrapper {
         max-width: 96em;
         margin:0 auto;
-        padding:0 2.25em;
+        padding:0 2em;
     }
 
 .content-wrapper:after {
@@ -52,4 +52,10 @@
       clip: rect(0,0,0,0);
       border:0;
     }
+  }
+
+.separation{
+    display:flex;
+    border-bottom:1px solid $grey-3;
+    margin:0 0 2em;
   }

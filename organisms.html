@@ -1,5 +1,3 @@
-<!--cd/d D:/EPFL Web Dev/HTMLCSS project
-sass --watch assets/sass:assets/css-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,6 +12,20 @@ sass --watch assets/sass:assets/css-->
       <defs>
         <symbol id="block">
            <rect x="1" y="1" rx="2" ry="2" width="198" height="98"/>
+        </symbol>
+        <symbol id="add">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+        </symbol>
+        <symbol id="favorite" fill= "#afbac4">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </symbol>
+        <symbol id="remove" fill= "#afbac4" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+            <path d="M0 0h24v24H0z" fill="none"/>
+        </symbol>
+        <symbol id="edit" fill= "#afbac4" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+            <path d="M0 0h24v24H0z" fill="none"/>
         </symbol>
       </defs>
     </svg>
@@ -34,43 +46,174 @@ sass --watch assets/sass:assets/css-->
     <main>
       <div class="content-wrapper">
         <h1>Organisms</h1>
-        <ol class="main-nav">
-          <li><a href="#login">Login</a></li>
-        </ol>
-        <div class="main-element" id="login">
-          <h2>01. Log in</h2>
-            <h2 class="form_title">Log in</h2>
-            <form class="form" action="ideas" method="get">
-              <div class="input">
-                <label class="input__label" for="email-style">Email</label>
-                <div class="input__row">
-                  <input class="input__field" id="email-style" type="email" name= "search" />
-                </div>
+          <ol class="main-nav">
+            <li><a href="#login">Login</a></li>
+            <li><a href="#my-goals">My Goals</a></li>
+          </ol>
+          <div class="main-element" id="login">
+            <h2>01. Log in</h2>
+            <h2 class="form__title">Log in</h2>
+        </div>
+        <div class="separation">
+        </div>
+          <form class="form" action="ideas" method="get">
+            <div class="input">
+              <label class="input__label" for="email-style">Email</label>
+              <div class="input__row">
+                <input class="input__field" id="email-style" type="email" name= "search" />
               </div>
-              <div class="input">
-                <label class="input__label" for="password-style">Password</label>
-                <div class="input__row">
-                  <input class="input__field" id="password-style" type="password" name= "search" />
-                </div>
+            </div>
+            <div class="input">
+              <label class="input__label" for="password-style">Password</label>
+              <div class="input__row">
+                <input class="input__field" id="password-style" type="password" name= "search" />
               </div>
-              <div class="input input--forgot">
-                <div>
-              	  <input class="input__checkbox" id="remember-me" type="checkbox" name="remember-me"/>
-                  <label class="input__label input__label--checkbox" for="remember-me">Remember me</label>
-                </div>
-                <div class="input__link">
-                  <a href="forgot-password.html">Forgot password ?</a>
-                </div>
+            </div>
+            <div class="input input--forgot">
+              <div>
+                <input class="input__checkbox" id="remember-me" type="checkbox" name="remember-me"/>
+                <label class="input__label input__label--checkbox" for="remember-me">Remember me</label>
               </div>
-              <div class="input">
-                <label class="input__label sr-only--580max" for="login-btn" name="Submit login"></label>
-                <div class="input__row">
-                  <button class="input__row btn btn--form btn--cta btn--submit" id="login-btn" type="submit">
-                      Log In
+              <div class="input__link">
+                <a href="forgot-password.html">Forgot password ?</a>
+              </div>
+            </div>
+            <div class="input">
+              <label class="input__label sr-only--580max" for="login-btn" name="Submit login"></label>
+              <div class="input__row">
+                <button class="input__row btn btn--form btn--cta btn--submit" id="login-btn" type="submit">
+                Log In
+                </button>
+              </div>
+            </div>
+          </form>
+        <div class="main-element" id="my-goals">
+          <h2>02. My Goals</h2>
+            <div class="Goals__title">
+              <h2 class="form__title">My Goals</h2>
+              <button class="btn btn--marginbtm" type="submit" name="action" value="CreateGoal">Create Goal</button>
+            </div>
+            <div class="Goal__links">
+              <div class="Goal__onpage">
+                <a href="/to-do.html">To-do
+                </a>
+              </div>
+              <div class="Goal__offpage">
+                <a href="/to-do.html">Completed
+                </a>
+              </div>
+            </div>
+            <div class="separation">
+            </div>
+            <div class="cards">
+              <div class="card">
+                <a class="card__thumb" href="ideas/see-the-northern-lights.html">
+                <img src="Assets/images/northern-lights-small.jpg"
+                alt="northern lights"
+                srcset="Assets/images/northern-lights-small.jpg 300w,
+                Assets/images/northern-lights-large.jpg 600w"/>
+                  <div class="card__intro">
+                    <h3 class="card__title">See the northern lights</h3>
+                    <span>1254 people are doing this</span>
+                  </div>
+                </a>
+                <form class="card__footer" action="idea" method="post">
+                  <button class="btn  btn--like" type="submit" name="action" value="Like">
+                    <svg class="icon icon--like" height="18" viewBox="0 0 24 24" width="24" role="presentation">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                    Like
                   </button>
-                </div>
+                  <button class="btn  btn--remove" type="submit" name="action" value="RemoveGoal">
+                    <svg class="icon" height="24" viewBox="0 0 24 24" width="24" role="presentation">
+                      <use xlink:href="#remove"></use>
+                    </svg>
+                    Remove
+                  </button>
+                </form>
               </div>
-            </form>
+              <div class="card">
+                <a class="card__thumb" href="ideas/see-the-northern-lights.html">
+                <img src="Assets/images/northern-lights-small.jpg"
+                  alt="northern lights"
+                  srcset="Assets/images/northern-lights-small.jpg 300w,
+                  Assets/images/northern-lights-large.jpg 600w"/>
+                  <div class="card__owner">
+                    OWNER
+                  </div>
+                  <div class="card__intro">
+                    <h3 class="card__title">See the northern lights</h3>
+                    <span>1254 people are doing this</span>
+                  </div>
+                </a>
+                <form class="card__footer" action="idea" method="post">
+                  <button class="btn  btn--like" type="submit" name="action" value="Like">
+                    <svg class="icon icon--like" height="18" viewBox="0 0 24 24" width="24" role="presentation">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                    Like
+                  </button>
+                  <button class="btn  btn--edit" type="submit" name="action" value="EditGoal">
+                    <svg class="icon" height="24" viewBox="0 0 24 24" width="24" role="presentation">
+                      <use xlink:href="#edit"></use>
+                    </svg>
+                    Edit
+                  </button>
+                </form>
+              </div>
+              <div class="card">
+                <a class="card__thumb" href="ideas/see-the-northern-lights.html">
+                <img src="Assets/images/northern-lights-small.jpg"
+                  alt="northern lights"
+                  srcset="Assets/images/northern-lights-small.jpg 300w,
+                  Assets/images/northern-lights-large.jpg 600w"/>
+                  <div class="card__intro">
+                    <h3 class="card__title">Other Goal</h3>
+                    <span>1254 people are doing this</span>
+                  </div>
+                </a>
+                <form class="card__footer" action="idea" method="post">
+                  <button class="btn  btn--like" type="submit" name="action" value="Like">
+                    <svg class="icon icon--liked" height="18" viewBox="0 0 24 24" width="24" role="presentation">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                    Like
+                  </button>
+                  <button class="btn  btn--remove" type="submit" name="action" value="RemoveGoal">
+                    <svg class="icon" height="24" viewBox="0 0 24 24" width="24" role="presentation">
+                      <use xlink:href="#remove"></use>
+                    </svg>
+                    Remove
+                  </button>
+                </form>
+              </div>
+              <div class="card">
+                <a class="card__thumb" href="ideas/see-the-northern-lights.html">
+                <img src="Assets/images/northern-lights-small.jpg"
+                  alt="northern lights"
+                  srcset="Assets/images/northern-lights-small.jpg 300w,
+                  Assets/images/northern-lights-large.jpg 600w"/>
+                  <div class="card__intro">
+                    <h3 class="card__title">Other Goal</h3>
+                    <span>1254 people are doing this</span>
+                  </div>
+                </a>
+                <form class="card__footer" action="idea" method="post">
+                  <button class="btn  btn--like" type="submit" name="action" value="Like">
+                    <svg class="icon icon--liked" height="18" viewBox="0 0 24 24" width="24" role="presentation">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                    Like
+                  </button>
+                  <button class="btn  btn--remove" type="submit" name="action" value="RemoveGoal">
+                    <svg class="icon" height="24" viewBox="0 0 24 24" width="24" role="presentation">
+                      <use xlink:href="#remove"></use>
+                    </svg>
+                    Remove
+                  </button>
+                </form>
+              </div>
+          </div>
         </div>
       </div>
       <div class="blank-space">
@@ -88,3 +231,6 @@ sass --watch assets/sass:assets/css-->
     </footer>
   </body>
 </html>
+
+<!-- cd/d D:/EPFL Web Dev/HTMLCSS project
+sass --watch assets/sass:assets/css -->
