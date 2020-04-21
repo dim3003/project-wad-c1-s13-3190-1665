@@ -1,3 +1,7 @@
+
+<!-- cd/d D:/EPFL Web Dev/HTMLCSS project
+sass --watch assets/sass:assets/css -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -49,13 +53,13 @@
           <ol class="main-nav">
             <li><a href="#login">Login</a></li>
             <li><a href="#my-goals">My Goals</a></li>
+            <li><a href="#discussion">Discussion</a></li>
+            <li><a href="#profile">Profile</a></li>
           </ol>
+          <h2>01. Log in</h2>
           <div class="main-element" id="login">
-            <h2>01. Log in</h2>
             <h2 class="form__title">Log in</h2>
-        </div>
-        <div class="separation">
-        </div>
+          <hr class="separation">
           <form class="form" action="ideas" method="get">
             <div class="input">
               <label class="input__label" for="email-style">Email</label>
@@ -87,18 +91,19 @@
               </div>
             </div>
           </form>
+        </div>
+        <h2>02. My Goals</h2>
         <div class="main-element" id="my-goals">
-          <h2>02. My Goals</h2>
             <div class="Goals__title">
               <h2 class="form__title">My Goals</h2>
               <button class="btn btn--marginbtm" type="submit" name="action" value="CreateGoal">Create Goal</button>
             </div>
-            <div class="Goal__links">
-              <div class="Goal__onpage">
+            <div class="title_links">
+              <div class="title_links__onpage">
                 <a href="/to-do.html">To-do
                 </a>
               </div>
-              <div class="Goal__offpage">
+              <div class="title_links__offpage">
                 <a href="/to-do.html">Completed
                 </a>
               </div>
@@ -215,8 +220,8 @@
               </div>
           </div>
         </div>
-        <div class="main-element" id="Discussion">
-          <h2>03. Discussion</h2>
+        <h2>03. Discussion</h2>
+        <div class="main-element" id="discussion">
             <div class="Discussion__title">
               <h2>Discussion</h2>
               <span>3 comments</span>
@@ -265,6 +270,85 @@
               </div>
             </div>
         </div>
+        <h2>04. Profile</h2>
+        <div class="main-element" id="profile">
+          <div class="blocks">
+            <div class="block">
+              <img class="profile-pic" src="/assets/images/avatar.png"/>
+            </div>
+            <div  class="block">
+              <h2>Jason Reynolds</h2>
+            </div>
+          </div>
+          <div class="title_links">
+            <div class="title_links__offpage">
+              <a href="/profile.html">Profile
+              </a>
+            </div>
+            <div class="title_links__offpage">
+              <a href="/Following.html">Following
+              </a>
+            </div>
+            <div class="title_links__onpage">
+              <a href="/followers.html">Followers
+              </a>
+            </div>
+          </div>
+          <div class="blocks nomargin space_between">
+            <div class="block nomargin">
+              <div class="blocks nomargin">
+                <div class="block padding nomargin">
+                  <img class="profile-pic" src="/assets/images/avatar.png"/>
+                </div>
+                <div class="block padding nomargin center">
+                  <a href="tomjenkinsonprofile.html">Tom Jenkinson</a>
+                  <em>3 Goals</em>
+                </div>
+              </div>
+            </div>
+            <div class="block nomargin">
+              <div>
+                <button class="btn" type="button">Following</button>
+              </div>
+            </div>
+          </div>
+          <div class="blocks nomargin space_between">
+            <div class="block nomargin">
+              <div class="blocks nomargin">
+                <div class="block padding nomargin">
+                  <img class="profile-pic" src="/assets/images/avatar.png"/>
+                </div>
+                <div class="block padding nomargin center">
+                  <a href="tomjenkinsonprofile.html">Tom Jedusor</a>
+                  <em>7 Goals</em>
+                </div>
+              </div>
+            </div>
+            <div class="block nomargin">
+              <div>
+                <button class="btn" type="button">Follow</button>
+              </div>
+            </div>
+          </div>
+          <div class="blocks nomargin space_between">
+            <div class="block nomargin">
+              <div class="blocks nomargin">
+                <div class="block padding nomargin">
+                  <img class="profile-pic" src="/assets/images/avatar.png"/>
+                </div>
+                <div class="block padding nomargin center">
+                  <a href="tomjenkinsonprofile.html">Tom Jean</a>
+                  <em>0 Goal</em>
+                </div>
+              </div>
+            </div>
+            <div class="block nomargin">
+              <div>
+                <button class="btn btn--warning" type="button">Unfollow</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="blank-space">
       </div>
@@ -281,6 +365,3 @@
     </footer>
   </body>
 </html>
-
-<!-- cd/d D:/EPFL Web Dev/HTMLCSS project
-sass --watch assets/sass:assets/css -->

@@ -1,8 +1,22 @@
+.main-element{
+  margin: 5em 0;
+  border-top: 1px solid $grey-4;
+  border-bottom: 1px dotted $grey-4;
+  padding: 5em 0;
+}
 .blocks {
   display:flex;
   flex-wrap: wrap;
   &.nowrap{
     flex-wrap: nowrap;
+  }
+
+  &.nomargin{
+    margin: 0;
+  }
+
+  &.space_between{
+    justify-content: space-between;
   }
 
   font-size: 1em;
@@ -13,7 +27,6 @@
 .block{
   display:flex;
   flex-direction: column;
-  justify-content: flex-start;
 
   &.center{
     justify-content: center;
@@ -26,6 +39,14 @@
   stroke:#000;
   stroke-width:0.5%;
   margin:0 4em 2em 0;
+
+  &.padding{
+    padding:1.6rem 1rem;
+  }
+
+  &.nomargin{
+    margin:0;
+  }
 
   & p {
     margin:0;
@@ -42,6 +63,10 @@
     font-style: normal;
   }
 
+  & a {
+    font-size: 1.3em;
+    color:$primary-color;
+  }
 
 }
 

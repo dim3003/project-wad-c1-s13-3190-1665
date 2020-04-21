@@ -368,9 +368,27 @@ body {
     border: 0; } }
 
 .separation {
-  display: flex;
-  border-bottom: 1px solid #bbc1c6;
+  color: #bbc1c6;
   margin: 0 0 2em; }
+
+.title_links {
+  display: flex;
+  border-bottom: 1px solid #e3e5e9; }
+
+.title_links__onpage {
+  font-size: 1.3em;
+  padding-bottom: 1.6em;
+  border-bottom: 1px solid #192127;
+  margin-right: 1.6em; }
+  .title_links__onpage a {
+    color: black; }
+
+.title_links__offpage {
+  font-size: 1.3em;
+  padding-bottom: 1.6em;
+  margin-right: 1.6em; }
+  .title_links__offpage a {
+    color: #2c9cf2; }
 
 .icons {
   display: flex;
@@ -456,6 +474,12 @@ h6,
   line-height: 1.4;
   color: #72797e; }
 
+.main-element {
+  margin: 5em 0;
+  border-top: 1px solid #e3e5e9;
+  border-bottom: 1px dotted #e3e5e9;
+  padding: 5em 0; }
+
 .blocks {
   display: flex;
   flex-wrap: wrap;
@@ -464,11 +488,14 @@ h6,
   margin-bottom: 1rem; }
   .blocks.nowrap {
     flex-wrap: nowrap; }
+  .blocks.nomargin {
+    margin: 0; }
+  .blocks.space_between {
+    justify-content: space-between; }
 
 .block {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   stroke: #000;
   stroke-width: 0.5%;
   margin: 0 4em 2em 0; }
@@ -476,6 +503,10 @@ h6,
     justify-content: center; }
   .block.comment {
     font-size: 1.5em; }
+  .block.padding {
+    padding: 1.6rem 1rem; }
+  .block.nomargin {
+    margin: 0; }
   .block p {
     margin: 0;
     text-align: center;
@@ -485,6 +516,9 @@ h6,
   .block span em {
     font-size: 6em;
     font-style: normal; }
+  .block a {
+    font-size: 1.3em;
+    color: #2c9cf2; }
 
 .block--blue {
   fill: #2c9cf2; }
@@ -828,24 +862,6 @@ h6,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-
-.Goal__links {
-  display: flex; }
-
-.Goal__onpage {
-  font-size: 1.3em;
-  padding-bottom: 1.6em;
-  border-bottom: 1px solid #192127;
-  margin-right: 1.6em; }
-  .Goal__onpage a {
-    color: black; }
-
-.Goal__offpage {
-  font-size: 1.3em;
-  padding-bottom: 1.6em;
-  margin-right: 1.6em; }
-  .Goal__offpage a {
-    color: black; }
 
 .Discussion__title {
   display: flex; }
