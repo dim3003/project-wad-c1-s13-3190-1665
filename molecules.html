@@ -1,13 +1,18 @@
 <!--cd/d D:/EPFL Web Dev/HTMLCSS project
 sass --watch assets/sass:assets/css-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8"/>
     <title>My Bucket List - Molecules style guide</title>
     <meta name="viewport" content="width=device-width, initial scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if !IE]><!-->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--<![endif]-->
+    <!--[if IE]>
+      <link rel="stylesheet" href="Assets/css/universal-ie9.ss"/>
+    <![endif]-->
   </head>
   <body>
     <svg style="display:none;">
@@ -33,7 +38,7 @@ sass --watch assets/sass:assets/css-->
             <li><a href="atoms.html">Atoms</a></li>
             <li><a href="molecules.html">Molecules</a></li>
             <li><a href="organisms.html">Organisms</a></li>
-          <ul>
+          </ul>
         </nav>
       </div>
     </header>
@@ -117,7 +122,7 @@ sass --watch assets/sass:assets/css-->
             <p>COMMENT FORM</p>
             <div class="blocks nowrap">
               <div class="block center">
-                <img class="profile-pic" src="/assets/images/avatar.png"/>
+                <img class="profile-pic" src="/assets/images/avatar.png" alt="Profile picture"/>
               </div>
               <div class="block comment">
                 <form action="ideas" method="get">
@@ -138,7 +143,8 @@ sass --watch assets/sass:assets/css-->
             <img src="Assets/images/northern-lights-small.jpg"
                 alt="northern lights"
                 srcset="Assets/images/northern-lights-small.jpg 300w,
-                Assets/images/northern-lights-large.jpg 600w"/>
+                Assets/images/northern-lights-large.jpg 600w"
+                sizes="(min-width: 580px) 100vw, 100vw"/>
               <div class="card__intro">
                 <h3 class="card__title">See the northern lights</h3>
                 <span>1254 people are doing this</span>
@@ -146,13 +152,13 @@ sass --watch assets/sass:assets/css-->
             </a>
             <form class="card__footer" action="idea" method="post">
               <button class="btn btn--like" type="submit" name="action" value="Like">
-                <svg class="icon icon--liked" height="18" viewBox="0 0 24 24" width="24" role="presentation">
+                <svg class="icon icon--liked" height="18" viewBox="0 0 24 24" width="24">
                   <use xlink:href="#favorite"></use>
                 </svg>
                 Like
               </button>
               <button class="btn btn--add" type="submit" name="action" value="addGoal">
-                <svg class="icon" height="18" viewBox="0 0 24 24" width="24" role="presentation">
+                <svg class="icon" height="18" viewBox="0 0 24 24" width="24">
                   <use xlink:href="#add"></use>
                 </svg>
                 Add goal

@@ -1,13 +1,18 @@
 <!--cd iCloudDrive/Documents/EPFL Web Dev/HTMLCSS project
 sass --watch assets/sass:assets/css-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8"/>
     <title>My Bucket List - Atoms style guide</title>
     <meta name="viewport" content="width=device-width, initial scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if !IE]><!-->
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--<![endif]-->
+    <!--[if IE]>
+      <link rel="stylesheet" href="Assets/css/universal-ie9.ss"/>
+    <![endif]-->
   </head>
   <body>
     <svg style="display:none;">
@@ -28,7 +33,7 @@ sass --watch assets/sass:assets/css-->
             <li><a href="atoms.html">Atoms</a></li>
             <li><a href="molecules.html">Molecules</a></li>
             <li><a href="organisms.html">Organisms</a></li>
-          <ul>
+          </ul>
         </nav>
       </div>
     </header>
@@ -48,44 +53,44 @@ sass --watch assets/sass:assets/css-->
               <li class="block">
                 <svg class="block--blue" width="200" height="100">
                   <use xlink:href="#block"></use>
-                  <p>#2c9cf2</p>
                 </svg>
+                <p>#2c9cf2</p>
               </li>
               <li class="block">
                 <svg class="block--orange" width="200" height="100">
                   <use xlink:href="#block"></use>
-                  <p>#e25d43</p>
                 </svg>
+                <p>#e25d43</p>
               </li>
               <li class="block">
                 <svg class="block--grey-1" width="200" height="100">
                   <use xlink:href="#block"></use>
-                  <p>#72797e</p>
                 </svg>
+                <p>#72797e</p>
               </li>
               <li class="block">
                 <svg class="block--grey-2" width="200" height="100">
                   <use xlink:href="#block"></use>
-                  <p>#afbac4</p>
                 </svg>
+                <p>#afbac4</p>
               </li>
               <li class="block">
                 <svg class="block--grey-3" width="200" height="100">
                   <use xlink:href="#block"></use>
-                  <p>#bbc1c6</p>
                 </svg>
+                <p>#bbc1c6</p>
               </li>
               <li class="block">
                 <svg class="block--grey-4" width="200" height="100">
                   <use xlink:href="#block"></use>
-                  <p>#e3e5e9</p>
                 </svg>
+                <p>#e3e5e9</p>
               </li>
               <li class="block">
                 <svg class="block--grey-5" width="200" height="100">
                   <use xlink:href="#block"></use>
-                  <p>#f7f9fc</p>
                 </svg>
+                <p>#f7f9fc</p>
               </li>
             </ul>
         </div>

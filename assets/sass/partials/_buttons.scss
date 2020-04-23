@@ -43,9 +43,8 @@
 .btn--cta{
     color:#fff;
     background-color: $primary-color;
-    border: $primary-color;
     border-left-width: 0;
-
+    border:none;
     &:hover,
     &:active,
     &:focus {
@@ -59,14 +58,14 @@
 .btn--warning {
     color:#fff;
     background-color: $secondary-color;
-    border:  $secondary-color;
+    border:  none;
 
     &:hover,
     &:active,
     &:focus {
         text-decoration:none;
         background-color: darken($secondary-color, 15);
-        border: darken($secondary-color, 15);
+        border: none;
         color:$white;
     }
 
