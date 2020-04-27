@@ -1,6 +1,6 @@
 
-.form{
-  display:flex;
+.form {
+  display: flex;
   flex-direction: column;
 }
 
@@ -9,7 +9,7 @@
   margin: 1em 0;
 
   @media screen and (min-width:530px) {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 60%;
@@ -17,36 +17,35 @@
 }
 
 .input__label {
-  display:block;
-  cursor:pointer;
-  color:$black;
-  padding:.5em 0;
-  width:200px;
+  display: block;
+  cursor: pointer;
+  color: $black;
+  padding: .5em 0;
+  width: 200px;
 
-  &.input__label--checkbox{
-    display:inline;
-    color:inherit;
-    padding:0;
+  &.input__label--checkbox {
+    display: inline;
+    color: inherit;
+    padding: 0;
   }
 }
 
 .input__row {
-  display:flex;
+  display: flex;
+  box-shadow: 0 0 15px -5px $black;
 
-  @media screen and (min-width:530px){
+  & .input__field {
+    flex: 1 0 auto;
+    padding: .5em;
+  }
+
+  @media screen and (min-width:530px) {
     width: 300px;
   }
-
-  & .input__field{
-    flex:1 0 auto;
-    padding:.5em;
-  }
-
-  box-shadow: 0 0 15px -5px $black;
 }
 
-.input__checkbox{
-  cursor:pointer;
+.input__checkbox {
+  cursor: pointer;
   margin-right: 5px;
 
   box-shadow: 0 0 15px -5px $black;
@@ -57,12 +56,12 @@
 
 }
 
-.input--forgot{
-  margin:0;
-  display:flex;
+.input--forgot {
+  margin: 0;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.profile-pic{
-  border-radius:25px;
+.profile-pic {
+  border-radius: 25px;
 }

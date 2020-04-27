@@ -1,7 +1,3 @@
-
-<!-- cd/d D:/EPFL Web Dev/HTMLCSS project
-sass --watch assets/sass:assets/css -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +12,9 @@ sass --watch assets/sass:assets/css -->
       <link rel="stylesheet" href="Assets/css/universal-ie9.ss"/>
     <![endif]-->
   </head>
+
   <body>
+
     <svg style="display:none;">
       <defs>
         <symbol id="block">
@@ -38,6 +36,7 @@ sass --watch assets/sass:assets/css -->
         </symbol>
       </defs>
     </svg>
+
     <header class="global-header">
       <div class="content-wrapper">
         <div class="logo logo--black">
@@ -52,6 +51,7 @@ sass --watch assets/sass:assets/css -->
         </nav>
       </div>
     </header>
+
     <main>
       <div class="content-wrapper">
         <h1>Organisms</h1>
@@ -61,6 +61,9 @@ sass --watch assets/sass:assets/css -->
             <li><a href="#discussion">Discussion</a></li>
             <li><a href="#profile">Profile</a></li>
           </ol>
+
+          <!--title outside of the main-element to be able to differentiate
+          website layout and style-guide layout-->
           <h2>01. Log in</h2>
           <div class="main-element" id="login">
             <h2 class="form__title">Log in</h2>
@@ -97,6 +100,7 @@ sass --watch assets/sass:assets/css -->
             </div>
           </form>
         </div>
+
         <h2>02. My Goals</h2>
         <div class="main-element" id="my-goals">
             <div class="Goals__title">
@@ -229,9 +233,10 @@ sass --watch assets/sass:assets/css -->
               </div>
           </div>
         </div>
+
         <h2>03. Discussion</h2>
         <div class="main-element" id="discussion">
-            <div class="Discussion__title">
+            <div class="Discussion-title">
               <h2>Discussion</h2>
               <span>3 comments</span>
             </div>
@@ -279,6 +284,7 @@ sass --watch assets/sass:assets/css -->
               </div>
             </div>
         </div>
+
         <h2>04. Profile</h2>
         <div class="main-element" id="profile">
           <div class="blocks">
@@ -353,15 +359,20 @@ sass --watch assets/sass:assets/css -->
             </div>
             <div class="block nomargin">
               <div>
+                <!--Unfollow button always orange to show the unfollow style;
+                only appears as an hover on the main website-->
                 <button class="btn btn--warning" type="button">Unfollow</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!--Blank space in order for the footer to not cover the main content-->
       <div class="blank-space">
       </div>
     </main>
+
     <footer class="global-footer">
       <div class="content-wrapper">
         <div class="logo logo--dark">
@@ -372,5 +383,6 @@ sass --watch assets/sass:assets/css -->
         </div>
       </div>
     </footer>
+
   </body>
 </html>

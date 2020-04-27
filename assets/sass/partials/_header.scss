@@ -2,14 +2,14 @@
  * header
  *-------------------------*/
 
-.global-header{
-  margin:0 0 4.8rem 0;
+.global-header {
+  margin: 0 0 4.8rem 0;
   border-bottom: 1px solid $grey-4;
 }
 
-.global-nav{
-    float:right;
-    @media screen and (max-width:580px){
-      float:left;
+.global-nav {
+    float: right;
+    @media screen and (max-width:580px) {
+      float: left;
     }
   }

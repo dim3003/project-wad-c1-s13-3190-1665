@@ -1,61 +1,61 @@
-.main-element{
+.main-element {
   margin: 5em 0;
   border-top: 1px solid $grey-4;
   border-bottom: 1px dotted $grey-4;
   padding: 5em 0;
 }
 .blocks {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   &.nowrap{
     flex-wrap: nowrap;
   }
 
-  &.nomargin{
+  &.nomargin {
     margin: 0;
   }
 
-  &.space_between{
+  &.space_between {
     justify-content: space-between;
   }
 
   font-size: 1em;
-  padding:0;
+  padding: 0;
   margin-bottom: 1rem;
 }
 
-.block{
-  display:flex;
+.block {
+  display: flex;
   flex-direction: column;
 
-  &.center{
+  stroke: #000;
+  stroke-width: 0.5%;
+  margin: 0 4em 2em 0;
+
+  &.center {
     justify-content: center;
   }
 
   &.comment {
-    font-size:1.5em;
+    font-size: 1.5em;
   }
 
-  stroke:#000;
-  stroke-width:0.5%;
-  margin:0 4em 2em 0;
-
-  &.padding{
-    padding:1.6rem 1rem;
+  &.padding {
+    padding: 1.6rem 1rem;
   }
 
-  &.nomargin{
-    margin:0;
+  &.nomargin {
+    margin: 0;
   }
 
   & p {
-    margin:0;
-    text-align:center;
+    margin: 0;
+    text-align: center;
     white-space: nowrap;
   }
 
   & span {
-    color:$black;
+    color: $black;
   }
 
   & span em {
@@ -65,70 +65,70 @@
 
   & a {
     font-size: 1.3em;
-    color:$primary-color;
+    color: $primary-color;
   }
 
 }
 
-.block--blue{
+.block--blue {
   fill: $primary-color;
 }
 
-.block--orange{
-  fill:$secondary-color;
+.block--orange {
+  fill: $secondary-color;
 }
 
-.block--grey-1{
-  fill:$grey-1;
+.block--grey-1 {
+  fill: $grey-1;
 }
 
-.block--grey-2{
-  fill:$grey-2;
+.block--grey-2 {
+  fill: $grey-2;
 }
 
-.block--grey-3{
-  fill:$grey-3;
+.block--grey-3 {
+  fill: $grey-3;
 }
 
-.block--grey-4{
-  fill:$grey-4;
+.block--grey-4 {
+  fill: $grey-4;
 }
 
-.block--grey-5{
-  fill:$grey-5;
+.block--grey-5 {
+  fill: $grey-5;
 }
 
 .typo {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
-.row{
-  display:flex;
+.row {
+  display: flex;
   flex-direction: row;
-  flex:1 0 auto;
+  flex: 1 0 auto;
   align-items: center;
-  width:100%;
-  height:85px;
+  width: 100%;
+  height: 85px;
   border-bottom: 1px solid $grey-3;
-    font-size: 1.5em;
+  font-size: 1.5em;
 
   &:last-child {
     margin-bottom: 5em;
   }
 
-  & .button-font{
+  & .button-font {
     font-size: 1.3rem;
-    color:$black;
+    color: $black;
   }
 
-  & div{
-    width:20%;
-    text-align:center;
+  & div {
+    width: 20%;
+    text-align: center;
   }
 
-  & h1, & h2, & h3, & h4, & h5, & h6{
-    margin:0;
-    padding:0;
+  & h1, & h2, & h3, & h4, & h5, & h6 {
+    margin: 0;
+    padding: 0;
   }
 }

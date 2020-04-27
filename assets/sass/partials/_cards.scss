@@ -3,56 +3,57 @@
     ====================== */
 
 .cards{
-  display:flex;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
+
+    font-size: 1rem;
+
     box-shadow: 0 0 20px rgba(0,0,0,0.14);
     margin: 0 $pulse $pulse 0;
     border-radius: 3px;
 
-    width:100%;
     @media screen and (min-width:580px){
-      width:300px;
+      width: 300px;
     }
-
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    font-size:1rem;
 }
 
 .card__thumb {
-    position:relative;
-    text-decoration:none;
-    color:#fff;
-    display:block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: block;
   }
 
 .card__owner {
-  margin:1.3em;
-  padding:0.4em 0.8em;
+  margin: 1.3em;
+  padding: 0.4em 0.8em;
   font-size: 1.3em;
-  background-color: $primary-color;
+  background: $primary-color;
   border-radius: 3px;
-  position:absolute;
-  top:0;
+  position: absolute;
+  top: 0;
   right: 0;
 }
+
 .card__intro {
     padding: 1.6em;
-    position:absolute;
-    bottom:0;
-    left:0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     right: 0;
 }
 
 .card__title {
     font-size: 2em;
-    color:#fff;
+    color: #fff;
 }
 
 .card__intro span {
@@ -61,39 +62,40 @@
 
 .card__thumb img {
     width: 100%;
-    display:block;
+    display: block;
 }
 
-.cards::after{
-    content:"";
-    display:table;
-    clear:both;
+.cards::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-    /* ----------------------
-     * Card__footer w/buttons
-     * --------------------*/
+/* ----------------------
+ * Card__footer w/buttons
+* --------------------*/
+
+
 .card__footer {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     border-top: 1px solid $grey-3;
 }
 
-.card__footer .btn{
-    border-right:1px solid $grey-3;
-    &:last-child{
-        border:none;
-    }
-
-    display:flex;
+.card__footer .btn {
+    display: flex;
     justify-content: flex-start;
 
-    border-radius:0;
-    margin:0;
+    border-right: 1px solid $grey-3;
+    border-radius: 0;
+    margin: 0;
     flex: 1 1 auto;
 
+    &:last-child {
+        border: none;
+    }
 }
 
 .card__footer .btn--like {
-    width:60%;
+    width: 60%;
 }

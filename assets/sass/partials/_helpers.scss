@@ -1,90 +1,90 @@
 .content-wrapper {
-        max-width: 96em;
-        margin:0 auto;
-        padding:0 2em;
-    }
+  max-width: 96em;
+  margin: 0 auto;
+  padding: 0 2em;
+}
 
 .content-wrapper:after {
-        content:'';
-        display:table;
-        clear:both;
-    }
+  content: '';
+  display: table;
+  clear: both;
+}
 
 .bare-list {
-        list-style-type:none;
-        padding:0;
-    }
+  list-style-type: none;
+  padding: 0;
+}
 
-.blank-space{
-  width:100%;
-  padding-bottom:60.5px;
+.blank-space {
+  width: 100%;
+  padding-bottom: 60.5px;
 
   @include tablet {
-    width:100%;
+    width: 100%;
     padding-bottom: 83px;
   }
 
-  @include desktop{
-    width:100%;
+  @include desktop {
+    width: 100%;
     padding-bottom: 121px;
   }
 }
 
-.sr-only{
-      position:absolute;
-      width:1px;
-      height:1px;
-      padding:0;
-      margin:-1px;
-      overflow:hidden;
-      clip: rect(0,0,0,0);
-      border:0;
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
   }
 
   .sr-only--580max {
-    @media screen and (max-width: 580px){
-      position:absolute;
-      width:1px;
-      height:1px;
-      padding:0;
-      margin:-1px;
-      overflow:hidden;
+    &.white {
+      color: #fff;
+    }
+
+    @media screen and (max-width: 580px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
       clip: rect(0,0,0,0);
-      border:0;
-    }
-
-    &.white{
-      color:#fff;
+      border: 0;
     }
   }
 
-.separation{
+.separation {
     color: $grey-3;
-    margin:0 0 2em;
+    margin: 0 0 2em;
   }
 
-.title_links{
-    display:flex;
+.title_links {
+    display: flex;
     border-bottom: 1px solid $grey-4;
   }
 
-.title_links__onpage{
+.title_links__onpage {
     font-size: 1.3em;
-    padding-bottom:1.6em;
+    padding-bottom: 1.6em;
     border-bottom: 1px solid $black;
     margin-right: 1.6em;
 
-    & a{
-      color:black;
+    & a {
+      color: black;
     }
 }
 
-.title_links__offpage{
+.title_links__offpage {
     font-size: 1.3em;
-    padding-bottom:1.6em;
+    padding-bottom: 1.6em;
     margin-right: 1.6em;
 
-    & a{
-      color:$primary-color;
+    & a {
+      color: $primary-color;
     }
   }

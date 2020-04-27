@@ -63,7 +63,7 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background: transparent; }
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -310,7 +310,7 @@ template {
  * BASE
  * ============================== */
 html {
-  background-color: #fff;
+  background: #fff;
   font-family: 'Rubik', helvetica, Arial, sans-serif;
   font-size: 62.5%;
   line-height: 1.6; }
@@ -318,7 +318,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #72797E; }
+  color: #72797e; }
 
 .content-wrapper {
   max-width: 96em;
@@ -356,6 +356,8 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
+.sr-only--580max.white {
+  color: #fff; }
 @media screen and (max-width: 580px) {
   .sr-only--580max {
     position: absolute;
@@ -366,8 +368,6 @@ body {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0; } }
-.sr-only--580max.white {
-  color: #fff; }
 
 .separation {
   color: #bbc1c6;
@@ -391,22 +391,6 @@ body {
   margin-right: 1.6em; }
   .title_links__offpage a {
     color: #2c9cf2; }
-
-.icons {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  margin-bottom: 2em; }
-  .icons .icon__block {
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    margin: 0 1em 1em 0;
-    box-shadow: 0 0 15px -5px #192127;
-    width: 15%;
-    text-align: center; }
 
 /* ===========================
     TYPOGRAPHY
@@ -475,6 +459,22 @@ h6,
   font-size: 1.2em;
   line-height: 1.4;
   color: #72797e; }
+
+.icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-bottom: 2em; }
+  .icons .icon__block {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin: 0 1em 1em 0;
+    box-shadow: 0 0 15px -5px #192127;
+    width: 15%;
+    text-align: center; }
 
 .main-element {
   margin: 5em 0;
@@ -596,12 +596,12 @@ h6,
 .input__row {
   display: flex;
   box-shadow: 0 0 15px -5px #192127; }
-  @media screen and (min-width: 530px) {
-    .input__row {
-      width: 300px; } }
   .input__row .input__field {
     flex: 1 0 auto;
     padding: .5em; }
+  @media screen and (min-width: 530px) {
+    .input__row {
+      width: 300px; } }
 
 .input__checkbox {
   cursor: pointer;
@@ -655,14 +655,14 @@ h6,
   flex-wrap: wrap; }
 
 .card {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
-  margin: 0 1.6rem 1.6rem 0;
-  border-radius: 3px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 1rem; }
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
+  margin: 0 1.6rem 1.6rem 0;
+  border-radius: 3px; }
   @media screen and (min-width: 580px) {
     .card {
       width: 300px; } }
@@ -677,7 +677,7 @@ h6,
   margin: 1.3em;
   padding: 0.4em 0.8em;
   font-size: 1.3em;
-  background-color: #2c9cf2;
+  background: #2c9cf2;
   border-radius: 3px;
   position: absolute;
   top: 0;
@@ -708,16 +708,16 @@ h6,
 
 /* ----------------------
  * Card__footer w/buttons
- * --------------------*/
+* --------------------*/
 .card__footer {
   display: flex;
   justify-content: flex-start;
   border-top: 1px solid #bbc1c6; }
 
 .card__footer .btn {
-  border-right: 1px solid #bbc1c6;
   display: flex;
   justify-content: flex-start;
+  border-right: 1px solid #bbc1c6;
   border-radius: 0;
   margin: 0;
   flex: 1 1 auto; }
@@ -732,7 +732,7 @@ h6,
  * ========================= */
 .btn {
   font-size: 1.3rem;
-  background-color: #fff;
+  background: #fff;
   color: #192127;
   padding: 1.6rem;
   margin: 1em 0;
@@ -752,27 +752,27 @@ h6,
     border-radius: 0; }
   .btn:hover, .btn:active, .btn:focus {
     text-decoration: none;
-    background-color: #e3e5e9;
+    background: #e3e5e9;
     color: #2c9cf2; }
 
 .btn--cta {
   color: #fff;
-  background-color: #2c9cf2;
+  background: #2c9cf2;
   border-left-width: 0;
   border: none; }
   .btn--cta:hover, .btn--cta:active, .btn--cta:focus {
     text-decoration: none;
-    background-color: #0b67ad;
+    background: #0b67ad;
     border: #0c75c5;
     color: #fff; }
 
 .btn--warning {
   color: #fff;
-  background-color: #e25d43;
+  background: #e25d43;
   border: none; }
   .btn--warning:hover, .btn--warning:active, .btn--warning:focus {
     text-decoration: none;
-    background-color: #bc371d;
+    background: #bc371d;
     border: none;
     color: #fff; }
 
@@ -806,7 +806,7 @@ h6,
   bottom: 0;
   left: 0;
   clear: both;
-  background-color: #192127;
+  background: #192127;
   color: #bbc1c6;
   padding: 0 0 1em 0; }
   @media screen and (min-width: 480px) {
@@ -865,9 +865,9 @@ h6,
   flex-wrap: wrap;
   justify-content: space-between; }
 
-.Discussion__title {
+.Discussion-title {
   display: flex; }
-  .Discussion__title h2 {
+  .Discussion-title h2 {
     margin: 0 5px 1em 0; }
 
 .comment__title {

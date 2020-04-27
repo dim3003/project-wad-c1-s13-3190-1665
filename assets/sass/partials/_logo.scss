@@ -2,21 +2,21 @@
  * logo
  *--------------------------*/
 
-.logo{
-    float:left;
+.logo {
+    float: left;
     margin: 2.25em 2.25em 2.25em 0;
 
-    @media screen and (max-width:580px){
+    @media screen and (max-width:580px) {
       margin: 2.25em 2.25em 0 0;
     }
  }
 
  .logo a {
-    text-decoration:none;
+    text-decoration: none;
 }
  .logo span {
     font-size: 1.8em;
-    font-weight:bold;
+    font-weight: bold;
     color: $black;
 }
 

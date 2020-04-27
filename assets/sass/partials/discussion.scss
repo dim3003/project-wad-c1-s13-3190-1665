@@ -1,20 +1,20 @@
-.Discussion__title{
-  display:flex;
+.Discussion-title {
+  display: flex;
 
-  & h2{
-    margin:0 5px 1em 0;
+  & h2 {
+    margin: 0 5px 1em 0;
   }
 }
 
-.comment__title{
+.comment__title {
   margin-bottom: 1em;
 
   font-weight: bold;
-  color:$black;
+  color: $black;
 
   & em {
-    color:$grey-2;
-    margin-left:6px;
+    color: $grey-2;
+    margin-left: 6px;
     font-weight: normal;
   }
 }

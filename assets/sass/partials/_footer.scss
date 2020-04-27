@@ -2,23 +2,23 @@
  * Footer
  *----------------------*/
  .global-footer {
-   width:100%;
-   position:fixed;
-   bottom:0;
-   left:0;
-   clear:both;
+   @include tablet {
+     padding: 0 0 1em 0;
+   }
 
-    background-color: $black;
+   @include desktop {
+     padding: ($pulse * 2) 0 ($pulse * 1);
+   }
+
+   width: 100%;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   clear: both;
+
+    background: $black;
     color: $grey-3;
-    padding:0 0 1em 0;
-
-    @include tablet {
-      padding:0 0 1em 0;
-    }
-
-    @include desktop {
-      padding: ($pulse * 2) 0 ($pulse * 1);
-    }
+    padding: 0 0 1em 0;
 }
 
 .global-footer a {
@@ -26,16 +26,16 @@
     text-decoration: none;
 }
 
-.global-footer .logo{
-  float:left;
+.global-footer .logo {
+  float: left;
 }
 
 .global-footer .copyright {
-  float:right;
-  @media screen and (max-width:320px){
-    float:left;
-  }
+  float: right;
   margin: 3em 0 0 0;
+  @media screen and (max-width:320px) {
+    float: left;
+  }
 }
 
 .global-footer::after {

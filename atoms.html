@@ -1,5 +1,3 @@
-<!--cd iCloudDrive/Documents/EPFL Web Dev/HTMLCSS project
-sass --watch assets/sass:assets/css-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,14 +5,16 @@ sass --watch assets/sass:assets/css-->
     <title>My Bucket List - Atoms style guide</title>
     <meta name="viewport" content="width=device-width, initial scale=1" />
     <!--[if !IE]><!-->
-        <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap" >
         <link rel="stylesheet" href="assets/css/main.css"/>
     <!--<![endif]-->
     <!--[if IE]>
       <link rel="stylesheet" href="Assets/css/universal-ie9.ss"/>
     <![endif]-->
   </head>
+
   <body>
+
     <svg style="display:none;">
       <defs>
         <symbol id="block">
@@ -37,8 +37,12 @@ sass --watch assets/sass:assets/css-->
         </nav>
       </div>
     </header>
+
     <main>
       <div class="content-wrapper">
+
+        <!--title outside of the main-element to be able to differentiate
+        website layout and style-guide layout-->
         <h1>Atoms</h1>
         <ol class="main-nav">
           <li><a href="#colors"> Colors</a></li>
@@ -47,240 +51,248 @@ sass --watch assets/sass:assets/css-->
           <li><a href="#forms">Forms</a></li>
           <li><a href="#icons">icons</a></li>
         </ol>
+
+        <h2>01. Colors</h2>
         <div class="main-element" id="colors">
-          <h2>01. Colors</h2>
-            <ul class="blocks">
-              <li class="block">
-                <svg class="block--blue" width="200" height="100">
-                  <use xlink:href="#block"></use>
-                </svg>
-                <p>#2c9cf2</p>
-              </li>
-              <li class="block">
-                <svg class="block--orange" width="200" height="100">
-                  <use xlink:href="#block"></use>
-                </svg>
-                <p>#e25d43</p>
-              </li>
-              <li class="block">
-                <svg class="block--grey-1" width="200" height="100">
-                  <use xlink:href="#block"></use>
-                </svg>
-                <p>#72797e</p>
-              </li>
-              <li class="block">
-                <svg class="block--grey-2" width="200" height="100">
-                  <use xlink:href="#block"></use>
-                </svg>
-                <p>#afbac4</p>
-              </li>
-              <li class="block">
-                <svg class="block--grey-3" width="200" height="100">
-                  <use xlink:href="#block"></use>
-                </svg>
-                <p>#bbc1c6</p>
-              </li>
-              <li class="block">
-                <svg class="block--grey-4" width="200" height="100">
-                  <use xlink:href="#block"></use>
-                </svg>
-                <p>#e3e5e9</p>
-              </li>
-              <li class="block">
-                <svg class="block--grey-5" width="200" height="100">
-                  <use xlink:href="#block"></use>
-                </svg>
-                <p>#f7f9fc</p>
-              </li>
-            </ul>
+          <ul class="blocks">
+            <li class="block">
+              <svg class="block--blue" width="200" height="100">
+                <use xlink:href="#block"></use>
+              </svg>
+              <p>#2c9cf2</p>
+            </li>
+            <li class="block">
+              <svg class="block--orange" width="200" height="100">
+                <use xlink:href="#block"></use>
+              </svg>
+              <p>#e25d43</p>
+            </li>
+            <li class="block">
+              <svg class="block--grey-1" width="200" height="100">
+                <use xlink:href="#block"></use>
+              </svg>
+              <p>#72797e</p>
+            </li>
+            <li class="block">
+              <svg class="block--grey-2" width="200" height="100">
+                <use xlink:href="#block"></use>
+              </svg>
+              <p>#afbac4</p>
+            </li>
+            <li class="block">
+              <svg class="block--grey-3" width="200" height="100">
+                <use xlink:href="#block"></use>
+              </svg>
+              <p>#bbc1c6</p>
+            </li>
+            <li class="block">
+              <svg class="block--grey-4" width="200" height="100">
+                <use xlink:href="#block"></use>
+              </svg>
+              <p>#e3e5e9</p>
+            </li>
+            <li class="block">
+              <svg class="block--grey-5" width="200" height="100">
+                <use xlink:href="#block"></use>
+              </svg>
+              <p>#f7f9fc</p>
+            </li>
+          </ul>
         </div>
+
+        <h2>02. Typography</h2>
         <div class="main-element" id="typography">
-          <h2>02. Typography</h2>
-            <ul class="blocks">
-              <li class="block">
-                <p>GLYPH</p>
-                <span><em>Aa</em></span>
-              </li>
-              <li class="block">
-                <p>WEIGHTS</p>
-                <span>Regular</span>
-                <span class="italic">Italic</span>
-                <span class="bold">Bold</span>
-                <span class="bold italic">Bold italic</span>
-              </li>
-            </ul>
-            <div class="typo">
-              <div class="row">
-                <div>STYLE</div>
-                <div>DESKTOP</div>
-                <div>TABLET</div>
-                <div>MOBILE</div>
-                <div>LINE HEIGHT</div>
-              </div>
-              <div class="row">
-                <div><h1>H1</h1></div>
-                <div>48px</div>
-                <div>40px</div>
-                <div>36px</div>
-                <div>1.2</div>
-              </div>
-              <div class="row">
-                <div><h2>H2</h2></div>
-                <div>36px</div>
-                <div>32px</div>
-                <div>28px</div>
-                <div>1.2</div>
-              </div>
-              <div class="row">
-                <div><h3>H3</h3></div>
-                <div>28px</div>
-                <div>28px</div>
-                <div>24px</div>
-                <div>1.2</div>
-              </div>
-              <div class="row">
-                <div><h4>H4</h4></div>
-                <div>13px</div>
-                <div>13px</div>
-                <div>13px</div>
-                <div>1.4</div>
-              </div>
-              <div class="row">
-                <div><h5>H5</h5></div>
-                <div>14px</div>
-                <div>14px</div>
-                <div>14px</div>
-                <div>1.4</div>
-              </div>
-              <div class="row">
-                <div><h6>H6</h6></div>
-                <div>12px</div>
-                <div>12px</div>
-                <div>12px</div>
-                <div>1.5</div>
-              </div>
-              <div class="row">
-                <div class="button-font">ACTION/BUTTON</div>
-                <div>13px</div>
-                <div>13px</div>
-                <div>13px</div>
-                <div>1</div>
-              </div>
-              <div class="row">
-                <div>Paragraphs</div>
-                <div>15px</div>
-                <div>15px</div>
-                <div>15px</div>
-                <div>1.6</div>
-              </div>
+          <ul class="blocks">
+            <li class="block">
+              <p>GLYPH</p>
+              <span><em>Aa</em></span>
+            </li>
+            <li class="block">
+              <p>WEIGHTS</p>
+              <span>Regular</span>
+              <span class="italic">Italic</span>
+              <span class="bold">Bold</span>
+              <span class="bold italic">Bold italic</span>
+            </li>
+          </ul>
+          <div class="typo">
+            <div class="row">
+              <div>STYLE</div>
+              <div>DESKTOP</div>
+              <div>TABLET</div>
+              <div>MOBILE</div>
+              <div>LINE HEIGHT</div>
             </div>
+            <div class="row">
+              <div><h1>H1</h1></div>
+              <div>48px</div>
+              <div>40px</div>
+              <div>36px</div>
+              <div>1.2</div>
+            </div>
+            <div class="row">
+              <div><h2>H2</h2></div>
+              <div>36px</div>
+              <div>32px</div>
+              <div>28px</div>
+              <div>1.2</div>
+            </div>
+            <div class="row">
+              <div><h3>H3</h3></div>
+              <div>28px</div>
+              <div>28px</div>
+              <div>24px</div>
+              <div>1.2</div>
+            </div>
+            <div class="row">
+              <div><h4>H4</h4></div>
+              <div>13px</div>
+              <div>13px</div>
+              <div>13px</div>
+              <div>1.4</div>
+            </div>
+            <div class="row">
+              <div><h5>H5</h5></div>
+              <div>14px</div>
+              <div>14px</div>
+              <div>14px</div>
+              <div>1.4</div>
+            </div>
+            <div class="row">
+              <div><h6>H6</h6></div>
+              <div>12px</div>
+              <div>12px</div>
+              <div>12px</div>
+              <div>1.5</div>
+            </div>
+            <div class="row">
+              <div class="button-font">ACTION/BUTTON</div>
+              <div>13px</div>
+              <div>13px</div>
+              <div>13px</div>
+              <div>1</div>
+            </div>
+            <div class="row">
+              <div>Paragraphs</div>
+              <div>15px</div>
+              <div>15px</div>
+              <div>15px</div>
+              <div>1.6</div>
+            </div>
+          </div>
         </div>
+
+        <h2>03. Buttons</h2>
         <div class="main-element" id="buttons">
-          <h2>03. Buttons</h2>
-            <p>DEFAULT BUTTON</p>
-            <button class="btn" type="button">Button</button>
-            <p>CALL TO ACTION BUTTON</p>
-            <button class="btn btn--cta" type="button">Button--cta</button>
-            <p>WARNING BUTTON</p>
-            <button class="btn btn--warning" type="button">Button--warning</button>
+          <p>DEFAULT BUTTON</p>
+          <button class="btn" type="button">Button</button>
+          <p>CALL TO ACTION BUTTON</p>
+          <button class="btn btn--cta" type="button">Button--cta</button>
+          <p>WARNING BUTTON</p>
+          <button class="btn btn--warning" type="button">Button--warning</button>
         </div>
+
+        <h2>04. Forms</h2>
         <div class="main-element" id="forms">
-          <h2>04. Forms</h2>
-            <p>TEXT INPUT</p>
-            <form class="input">
-              <div class="input__row">
-                <label class="input__label sr-only" for="example-input"> Example text input </label>
-                <input class="input__field" id="example-input" type= "text" name= "search"
-                placeholder="Sample text"/>
-              </div>
-            </form>
-        </div>
-        <div class="main-element" id="icons">
-          <h2>05. Icons</h2>
-            <div class="icons">
-              <div class="icon__block">
-                <p>ADD BLACK 18px</p>
-                <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>CLEAR BLACK 18px</p>
-                <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>CREATE BLACK 18px</p>
-                <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>DELETE BLACK 18px</p>
-                <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>CLEAR BLACK 24px</p>
-                <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>SEARCH BLACK 18px</p>
-                <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>FAVORITE BLACK 18px</p>
-                <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>DONE BLACK 18px</p>
-                <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>DATE RANGE BLACK 18px</p>
-                <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>SEARCH BLACK 24px</p>
-                <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                </svg>
-              </div>
-              <div class="icon__block">
-                <p>MENU BLACK 24px</p>
-                <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                </svg>
-              </div>
+          <p>TEXT INPUT</p>
+          <form class="input">
+            <div class="input__row">
+              <label class="input__label sr-only" for="example-input"> Example text input </label>
+              <input class="input__field" id="example-input" type= "text" name= "search"
+              placeholder="Sample text"/>
             </div>
+          </form>
+        </div>
+
+        <h2>05. Icons</h2>
+        <div class="main-element" id="icons">
+          <div class="icons">
+            <div class="icon__block">
+              <p>ADD BLACK 18px</p>
+              <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>CLEAR BLACK 18px</p>
+              <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>CREATE BLACK 18px</p>
+              <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>DELETE BLACK 18px</p>
+              <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>CLEAR BLACK 24px</p>
+              <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>SEARCH BLACK 18px</p>
+              <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>FAVORITE BLACK 18px</p>
+              <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>DONE BLACK 18px</p>
+              <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>DATE RANGE BLACK 18px</p>
+              <svg fill="#000000" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>SEARCH BLACK 24px</p>
+              <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </div>
+            <div class="icon__block">
+              <p>MENU BLACK 24px</p>
+              <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!--Blank space in order for the footer to not cover the main content-->
       <div class="blank-space">
       </div>
     </main>
+
     <footer class="global-footer">
       <div class="content-wrapper">
         <div class="logo logo--dark">
@@ -291,5 +303,6 @@ sass --watch assets/sass:assets/css-->
         </div>
       </div>
     </footer>
+
   </body>
 </html>
